@@ -1,3 +1,8 @@
+/* ***********************SMARTPHONE************************* */
+
+@media (max-width: 479px)
+{
+
 /* GLOBAL SELECTORS */
 
 
@@ -8,3 +13,41 @@
 
 
 /* ID SELECTORS */
+
+}
+
+/* ***********************TABLET************************* */
+
+@media (min-width: 480px) and (max-width: 1023px)
+{
+
+/* GLOBAL SELECTORS */
+
+
+/* TAG SELECTORS */
+
+
+/* CLASS SELECTORS */
+
+
+/* ID SELECTORS */
+
+}
+
+/* ***********************DESKTOP************************* */
+
+@media (min-width: 1024px)
+{
+
+/* GLOBAL SELECTORS */
+
+
+/* TAG SELECTORS */
+
+
+/* CLASS SELECTORS */
+
+
+/* ID SELECTORS */
+
+}
