@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVM Motos - Clases</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="gridArea">
+    <header id="cabeza">
+        <h1>NVM Motos</h1>
+        <h2>Mira los testimonios de nuestros alumnos!</h2>
+
+    </header>
+    <nav id="menu" class="flexNav">
+        <span><a href="../index.html">HOME</a></span>
+        <span><a href="../sections/profesor.html">Profesor</a></span>
+        <span><a href="../sections/clases.html">Clases</a></span>
+        <span><a href="../sections/testimonios.html">Testimonios</a></span>
+        <span><a href="../sections/contacto.html">Contacto</a></span>
+    </nav>
+    <main>
+        <section id="contenidoPrincipal contenidoSecundario">
+            <form action="mailto:nickovm@hotmail.com" method="post" enctype="text/plain"><!-- CREO UN FORM QUE ENVIARÁ MAIL -->
+                <label>Tu nombre: </label><br><!-- CREO LABEL SIN ASIGNAR A ID O CLASS -->
+                <input type="text" name="nombre" value=""><br><!-- CREO INPUT DE TEXTO PARA NOMBRE -->
+                <label>Tu email: </label><br><!-- CREO LABEL SIN ASIGNAR A ID O CLASS  -->
+                <input type="email" name="email" value=""><br><!-- INPUT PARA EMAIL -->
+                <label for="gender">Género: </label><br><!-- LABEL PARA EL SELECT -->
+                <select name="gender"><!-- CREO UN SELECT CON 3 OPCIONES -->
+                  <option value="Mujer">Mujer</option><!-- OPT 1 -->
+                  <option value="Varón">Varon</option><!-- OPT 2 -->
+                  <option value="NS">Prefiero no decirlo</option><!-- OPT 3 -->
+                </select><!-- CIERRO SELECT -->
+                <br><!-- LINE BREAK -->
+                <label>Desea recibir newsletter? </label><br><!-- LABEL SIN ID O CLASS -->
+                <input type="checkbox" name="newsletter" value=""><br><!-- CHECKBOX -->
+                <label>Tu mensaje: </label><br><!-- LABEL SIN ID O CLASS Y LINE BREAK -->
+                <textarea name="tumensaje" cols="30" rows="10"></textarea><br><!-- CREO UN TEXT AREA FLEXIBLE -->
+                <input type="reset" name="reset"><!-- RESET -->
+                <input type="submit" name="" value="enviar"><!-- SUBMIT -->
+              </form><!-- CIERRO FORM -->
+
+        </section>
+
+        
+    </main>
+    <aside id="publicidad">
+        <h3>PUBLICIDAD</h3>
+        <img src="https://www.altonivel.com.mx/assets/images/Marketing/Publicidad/publicidadonline320.jpg" alt="publicidad 1" class="imagenPublicidad">
+        <img src="https://i.pinimg.com/280x280_RS/91/6d/85/916d8531d909c7189be87fe31823af1c.jpg" alt="publicidad 2" class="imagenPublicidad">
+        <h3>PUBLICIDAD</h3>
+
+    </aside>
+    <br>
+    <footer id="pie">
+        &copy; 2022 - Desarrollado por Gastón G. Sosa
+
+    </footer>
+    
+</body>
+</html>
