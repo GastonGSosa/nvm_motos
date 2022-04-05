@@ -1,4 +1,13 @@
-/* ***********************SMARTPHONE************************* */
+/*******************************************************
+***************COLOR PALETTE****************************
+**https://colorhunt.co/palette/0820322c394b334756ff4c29*
+****************************************************  */
+
+
+
+/* ******************************************************************
+******************************SMARTPHONE***************************** 
+******************************************************************* */
 
 @media (max-width: 479px)
 {
@@ -8,6 +17,7 @@
     font-family: Poppins, sans-serif;
     background-color: #082032;
     color: #FF4C29;
+    margin: 0;
 }
 
 
@@ -21,7 +31,9 @@
 
 }
 
-/* ***********************TABLET************************* */
+/* ******************************************************************
+******************************TABLET******************************** 
+******************************************************************* */
 
 @media (min-width: 480px) and (max-width: 1023px)
 {
@@ -31,6 +43,7 @@
     font-family: Poppins, sans-serif;
     background-color: #082032;
     color: #FF4C29;
+    margin: 0;
 }
 
 
@@ -44,28 +57,73 @@
 
 }
 
-/* ***********************DESKTOP************************* */
+/* ******************************************************************
+******************************DESKTOP******************************** 
+******************************************************************* */
 
 @media (min-width: 1024px)
 {
 
-/* GLOBAL SELECTORS */
+/************************* GLOBAL SELECTORS ************************/
 * {
     font-family: Poppins, sans-serif;
-    background-color: #082032;
     color: #FF4C29;
+    margin:0;
 }
 
-/* TAG SELECTORS */
+/************************** TAG SELECTORS **************************/
+html, body{
+    background-color: #082032;
+    height:100%;
+}
 header{
     background-color: #2C394B;
+    top: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     background-color: #2C394B;
 }
 
+main{
+    height: 75vh;
+}
 
-/* CLASS SELECTORS */
+aside{
+    background-color: #334756;
+}
+span{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 150px;
+    background-color: #334756;
+    margin: 3px;
+    display:block;
+    border-radius: 15px;
+}
+span:hover{
+    border: solid 3px;
+    transition: border .1s;
+    cursor: pointer;
+}
+footer{
+    background-color: #2C394B;
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+/**************************** CLASS SELECTORS **********************/
 
 /* creo una class para asignar el grid area, en este caso body */
 .gridArea { 
@@ -80,17 +138,28 @@ h1{
     /* Asigno tamaño a columnas y filas */
 
     grid-template-columns: 20vw auto 10vw ;
-    grid-template-rows: 2fr 3fr 3fr 1fr;
+    grid-template-rows: 15vh 35vh 45vh 5vh;
 
-    /* Asigno espacios entre columnas y filas */
-    grid-column-gap: ;
-    grid-row-gap: ;
+}
+.flexNav{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
 
+}
+.imagenPublicidad{
+    width:100px;
+    height:100px;
+}
+.fotoMoto{
+    border-radius: 15px;
+    border: solid;
 }
 
 
 
-/* ID SELECTORS */
+/************************* ID SELECTORS ****************************/
 #cabeza{
     grid-area: cabeza;
 
@@ -100,20 +169,38 @@ h1{
 
 }
 #contenidoPrincipal{
-    grid-area: contenidoPrincipal
+    grid-area: contenidoPrincipal;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px 10px 40px;
+    height: 30vh;
+    overflow: clip;
 
 }
 #contenidoSecundario{
     grid-area: contenidoSecundario;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    
 
 }
 #publicidad{
     grid-area: publicidad;
-    display: flexbox;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    justify-content: space-between;
 
 }
 #pie{
     grid-area: pie;
+    display: flex;
+    justify-content:center;
 
 }
 
