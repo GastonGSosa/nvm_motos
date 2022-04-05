@@ -31,6 +31,23 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ******************************************************************
 ******************************TABLET******************************** 
 ******************************************************************* */
@@ -38,24 +55,151 @@
 @media (min-width: 480px) and (max-width: 1023px)
 {
 
-/* GLOBAL SELECTORS */
-* {
-    font-family: Poppins, sans-serif;
-    background-color: #082032;
-    color: #FF4C29;
-    margin: 0;
-}
+    /************************* GLOBAL SELECTORS ************************/
+    * {
+        font-family: Poppins, sans-serif;
+        color: #FF4C29;
+        margin:0;
+    }
+    
+    /************************** TAG SELECTORS **************************/
+    html, body{
+        background-color: #082032;
+        height:100%;
+    }
+    header{
+        background-color: #2C394B;
+        top: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        background-color: #2C394B;
+    }
+    
+    aside{
+        background-color: #334756;
+    }
+    span{
+        background-color: #334756;
+        padding: 10px; 
+        margin: 3px;
+        display: inline-block;
+        border-radius: 15px;
+    }
+    span:hover{
+        border: solid 3px;
+        transition: border .1s;
+        cursor: pointer;
+    }
+    footer{
+        background-color: #2C394B;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+    
+    
+    /**************************** CLASS SELECTORS **********************/
+    
+    /* creo una class para asignar el grid area, en este caso body */
+    .gridArea { 
+        display: grid;                 /* necesario para que sea grid */
+        grid-template-areas:
+        "cabeza"/* fila 1 */
+        "menu" /* fila 2 */
+        "contenidoPrincipal" /* fila 3 */
+        "ContenidoSecundario" /* fila 4 */
+        "publicidad" /* fila 5 */
+        "pie" /* fila 6 */
+        ;
+    
+        /* Asigno tamaño a columnas y filas */
+    
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-row-gap: 5px;
+    
+    }
+    .flexNav{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        
+    
+    }
+    .imagenPublicidad{
+        width:70px;
+        height:70px;
+    }
+    .fotoMoto{
+        border-radius: 15px;
+        border: solid;
+        display: block;
+    }
+    
+    
+    
+    /************************* ID SELECTORS ****************************/
+    #cabeza{
+        grid-area: cabeza;
+    
+    }
+    #menu{
+        grid-area: menu;
+    
+    }
+    #contenidoPrincipal{
+        grid-area: contenidoPrincipal;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px 5px 20px;
+    
+    }
+    #contenidoSecundario{
+        grid-area: contenidoSecundario;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+        
+    
+    }
+    #publicidad{
+        grid-area: publicidad;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:center;
+        justify-content: space-between;
+    
+    }
+    #pie{
+        grid-area: pie;
+        display: flex;
+        justify-content:center;
+    
+    }
+    
+    
+    }
+    
 
 
-/* TAG SELECTORS */
 
 
-/* CLASS SELECTORS */
 
 
-/* ID SELECTORS */
 
-}
+
+
 
 /* ******************************************************************
 ******************************DESKTOP******************************** 
@@ -88,10 +232,6 @@ h1{
     background-color: #2C394B;
 }
 
-main{
-    height: 75vh;
-}
-
 aside{
     background-color: #334756;
 }
@@ -112,9 +252,6 @@ span:hover{
 footer{
     background-color: #2C394B;
     width: 100vw;
-    height: 5vh;
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
