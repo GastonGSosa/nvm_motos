@@ -354,20 +354,20 @@ html, body{
     height:100%;
 }
 header{
-    background-color: #2C394B;
+    background-image: linear-gradient( to right bottom,#2C394B 30%, #5c6674 70%);
     top: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
-h1{
-    background-color: #2C394B;
-}
 
 aside{
-    background-color: #334756;
+    background-image: linear-gradient(to bottom, #748c9e 10%, #334756 90%);
 }
+
+
+
 span{
     padding: 15px 50px 15px 50px;
     background-color: #334756;
@@ -379,6 +379,8 @@ span:hover{
     border: solid 3px;
     transition: border .1s;
     cursor: pointer;
+    background-image: radial-gradient(to right, #334756 65%, #1c2329 50%);
+    transition: .1s;
 }
 span:active{
     background-color: #334756;
@@ -427,6 +429,12 @@ footer{
     border-radius: 15px;
     border: solid;
 }
+
+.fotoMoto:hover {
+    transform: scale(1.2, 1.2) ;
+    transition: 1s;
+}
+
 .aranceles {
     padding: 20px;
     border: solid;
