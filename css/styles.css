@@ -379,7 +379,7 @@ span:hover{
     border: solid 3px;
     transition: border .1s;
     cursor: pointer;
-    background-image: linear-gradient(to right, #334756 65%, #082032);
+    background-image: linear-gradient(to right, #334756 30%, #082032);
     transition: .1s;
 }
 span:active{
